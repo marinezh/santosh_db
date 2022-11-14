@@ -19,7 +19,7 @@ function power(base, exponent) {
     
 }
 
-console.log(power(2,1));
+console.log(power(1,0));
 console.log(power(2,2));
 console.log(power(2,3));
 console.log(power(2,4));

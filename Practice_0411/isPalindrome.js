@@ -3,5 +3,7 @@
 //Otherwise it returns false.
 
 function isPalindrome(str){
-  
+    let strLen = str.length;
+    if (strLen === 0 || strLen === 1) return true
+    
 }
