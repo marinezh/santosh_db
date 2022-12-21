@@ -6,23 +6,18 @@
 
 // Time complexity - O(n)
 
-function validAnagram(stringA, stringB) {
+function validAnagram(s1, s2) {
     // steps
     // compare two strings
     // return the comparision
 
-    arrA = stringA.split("");
-    arrB = stringB.split("")
-
-    return arrA
-
-
+    return s1.split("").sort().join("") === s2.split("").sort().join("");
 
 } 
 
 console.log(validAnagram('aaz', 'zza')) // false);
 
-validAnagram('', '') // true
-validAnagram('aaz', 'zza') // false
-validAnagram('anagram', 'nagaram') // true
-validAnagram("rat","car") // false) // false
+console.log(validAnagram('', '')) // true
+console.log(validAnagram('aaz', 'zza')) // false
+console.log(validAnagram('anagram', 'nagaram'))// true
+console.log(validAnagram("rat","car")) // false) // false
